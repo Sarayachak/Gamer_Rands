@@ -6,8 +6,8 @@ To initialize and use this program:
   * Clone this project and open it in your code editor
   
   * `npm install`
-  * `node message-generator.js`
-  * The generated random message will appear in your terminal ! 
+  * Type`node message-generator.js` to run the main script 
+  * The generated random message will appear in your terminal ! :)
 
 
 
