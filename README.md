@@ -1,2 +1,3 @@
 # random-message-generator
-This program generates random messages.
+This program generates random and gaming-related messages.
+
