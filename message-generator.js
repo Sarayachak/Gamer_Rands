@@ -11,9 +11,19 @@ let complements1 = ['while watching french TV reality shows', 'while scolding He
 // Now, we will generate a random whole number, which we will use as our index for our previous arrays of strings (subject, verbs and complements)
 
 const generateRandomIndex = array => {
-    let randomIndex = Math.floor(Math.random() * array.length);
-    return randomIndex;
+    let randomIndex = Math.random() * array.length;
+    return Math.floor(randomIndex);
 };
 
-console.log('Running script seems to be working')
-console.log(generateRandomIndex(verbs));
+// console.log('Generating a number is working')
+// console.log(generateRandomIndex(verbs));
+
+// Let's start with picking a random subject for our message!
+const getRandomSubject = index => {
+    index = generateRandomIndex(subjects)
+    return subjects[index];
+};
+
+console.log(getRandomSubject());
+
+
