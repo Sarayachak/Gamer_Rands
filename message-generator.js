@@ -15,39 +15,47 @@ const generateRandomIndex = array => {
     return Math.floor(randomIndex);
 };
 
-// console.log('Generating a number is working')
-// console.log(generateRandomIndex(verbs));
 
 // Let's start with picking a random subject for our message!
 const getRandomSubject = index => {
     index = generateRandomIndex(subjects)
-    return subjects[index];
+    let randomSubject = subjects[index];
+    return randomSubject;
 };
 
-console.log(getRandomSubject());
+// console.log(getRandomSubject());
 
 // Now, we will pick a random verb for our message
 const getRandomVerb = index => {
     index = generateRandomIndex(verbs)
-    return verbs[index]
+    let randomVerb = verbs[index];
+    return randomVerb;
 };
 
-console.log(getRandomVerb());
+// console.log(getRandomVerb());
 
 // Let's pick a random first complement to complete our message
 const getRandomFirstComplement = index => {
     index = generateRandomIndex(complements)
-    return complements[index]
+    let randomFirstComplement = complements[index];
+    return randomFirstComplement;
 };
 
-console.log(getRandomFirstComplement());
+// console.log(getRandomFirstComplement());
 
 // Finally, let's pick a random second complement !
 const getRandomSecondComplement = index => {
     index = generateRandomIndex(complements1)
-    return complements1[index]
+    let randomSecondComplement = complements1[index];
+    return randomSecondComplement;
 };
 
-console.log(getRandomSecondComplement());
+// console.log(getRandomSecondComplement());
+
+function randomMessage() {
+    console.log(getRandomSubject() + ' ' + getRandomVerb() + ' ' + getRandomFirstComplement() + ' ' + getRandomSecondComplement() + '.');
+};
+
+randomMessage();
 
 
